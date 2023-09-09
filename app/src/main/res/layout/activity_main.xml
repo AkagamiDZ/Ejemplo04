@@ -28,22 +28,26 @@
             android:layout_height="180dp"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
-            tools:layout_editor_absoluteX="-1dp">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.5">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/BTAceptar"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingEnd="40dp"
-                android:text="Button" />
+                android:text="aceptar" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/BTAyuda"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="Ayuda" />
         </LinearLayout>
 
         <TextView
