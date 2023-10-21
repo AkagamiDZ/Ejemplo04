@@ -14,14 +14,17 @@ public class MainActivity2 extends AppCompatActivity {
     EditText etnombres;
     EditText etapellidos;
 
+    String nombre;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_resultado);
-        aceptar=(Button) findViewById(R.id.BTResultado2);
+        setContentView(R.layout.activity_main2);
+        aceptar=(Button) findViewById(R.id.BTResultado1);
         etnombres=(EditText) findViewById(R.id.ETNombre);
         etapellidos=(EditText) findViewById(R.id.ETApellidos);
+        nombre=etnombres.getText().toString();
 
         Intent intent = new Intent(this, MainResultado.class);
         intent.putExtra("nombre",etnombres.getText() );
