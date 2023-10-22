@@ -10,12 +10,13 @@ import android.widget.EditText;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    Button BTCalcular;
-    Button BTLimpiar;
-    EditText ETPeso;
-    EditText ETAltura;
-
+    Button btCalcular;
+    Button btLimpiar;
+    EditText etPeso;
+    EditText etAltura;
     EditText texto;
+
+
 
 
     @Override
@@ -23,17 +24,17 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
-        BTCalcular = findViewById(R.id.BTCalcular);
+        btCalcular = findViewById(R.id.BTCalcular);
+        btLimpiar = findViewById(R.id.BTlimpiar);
+        etPeso = findViewById(R.id.ETPeso);
+        etAltura = findViewById(R.id.ETAltura);
         texto = findViewById(R.id.ETPeso);
-        BTLimpiar = findViewById(R.id.BTlimpiar);
-        ETPeso = findViewById(R.id.ETPeso);
-        ETAltura = findViewById(R.id.ETAltura);
 
-        BTCalcular.setOnClickListener(new View.OnClickListener() {
+        btCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String pesotexto = ETPeso.getText().toString();
-                String alturatexto = ETAltura.getText().toString();
+                String pesotexto = etPeso.getText().toString();
+                String alturatexto = etAltura.getText().toString();
                 double peso = Double.parseDouble(pesotexto);
                 double altura = Double.parseDouble(alturatexto);
                 Double resultado = peso = altura;
@@ -43,16 +44,15 @@ public class MainActivity2 extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
-
         });
 
 
 
-        BTLimpiar.setOnClickListener(new View.OnClickListener() {
+        btLimpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ETPeso.setText("");
-                ETAltura.setText("");
+                etPeso.setText("");
+                etAltura.setText("");
             }
         });
     }

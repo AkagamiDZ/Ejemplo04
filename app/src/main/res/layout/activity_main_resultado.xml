@@ -59,7 +59,7 @@
             app:layout_constraintVertical_bias="0.845">
 
             <Button
-                android:id="@+id/BTResultado2"
+                android:id="@+id/BTvolver"
                 android:layout_width="211dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/color3"

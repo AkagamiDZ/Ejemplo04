@@ -21,7 +21,7 @@ public class MainResultado extends AppCompatActivity {
         setContentView(R.layout.activity_main_resultado);
 
         texto = findViewById(R.id.TVResultado);
-        BTVolver = findViewById(R.id.BTVolver);
+        BTVolver = findViewById(R.id.BTvolver);
         double resultado = getIntent().getDoubleExtra("mensaje",0);
 
         texto.setText("El Resultado es:" + String.valueOf(resultado));
