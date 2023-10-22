@@ -12,8 +12,8 @@ public class MainActivity2 extends AppCompatActivity {
 
     Button btCalcular;
     Button btLimpiar;
-    EditText etPeso;
-    EditText etAltura;
+    EditText etVerduleria;
+    EditText etHectareas;
     EditText texto;
 
 
@@ -26,18 +26,18 @@ public class MainActivity2 extends AppCompatActivity {
 
         btCalcular = findViewById(R.id.BTCalcular);
         btLimpiar = findViewById(R.id.BTlimpiar);
-        etPeso = findViewById(R.id.ETPeso);
-        etAltura = findViewById(R.id.ETAltura);
-        texto = findViewById(R.id.ETPeso);
+        etVerduleria = findViewById(R.id.ETVerduleria);
+        etHectareas = findViewById(R.id.ETHectareas);
+        texto = findViewById(R.id.ETVerduleria);
 
         btCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String pesotexto = etPeso.getText().toString();
-                String alturatexto = etAltura.getText().toString();
-                double peso = Double.parseDouble(pesotexto);
-                double altura = Double.parseDouble(alturatexto);
-                Double resultado = peso = altura;
+                String verduleriatexto = etVerduleria.getText().toString();
+                String hectareastexto = etHectareas.getText().toString();
+                double velduleria = Double.parseDouble(verduleriatexto);
+                double hectareas = Double.parseDouble(hectareastexto);
+                Double resultado = velduleria * hectareas ;
 
                 Intent intent = new Intent(getApplicationContext(), MainResultado.class);
                 intent.putExtra("mensaje", resultado);
@@ -51,8 +51,8 @@ public class MainActivity2 extends AppCompatActivity {
         btLimpiar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                etPeso.setText("");
-                etAltura.setText("");
+                etVerduleria.setText("");
+                etHectareas.setText("");
             }
         });
     }

@@ -52,7 +52,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/ETPeso"
+            android:id="@+id/ETVerduleria"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -65,7 +65,7 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <EditText
-            android:id="@+id/ETAltura"
+            android:id="@+id/ETHectareas"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -74,15 +74,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ETPeso"
+            app:layout_constraintTop_toBottomOf="@+id/ETVerduleria"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Peso"
-            app:layout_constraintBottom_toTopOf="@+id/ETPeso"
+            android:text="Costo verduras"
+            app:layout_constraintBottom_toTopOf="@+id/ETVerduleria"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.138"
             app:layout_constraintStart_toStartOf="parent"
@@ -93,12 +93,12 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Altura"
-            app:layout_constraintBottom_toTopOf="@+id/ETAltura"
+            android:text="Total Por Hectareas"
+            app:layout_constraintBottom_toTopOf="@+id/ETHectareas"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ETPeso"
+            app:layout_constraintTop_toBottomOf="@+id/ETVerduleria"
             app:layout_constraintVertical_bias="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -118,7 +118,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Clinica casas"
+            android:text="Verduleria casas"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
