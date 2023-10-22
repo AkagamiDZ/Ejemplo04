@@ -37,7 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
                 String alturatexto = etAltura.getText().toString();
                 double peso = Double.parseDouble(pesotexto);
                 double altura = Double.parseDouble(alturatexto);
-                Double resultado = peso = altura;
+                Double resultado = peso / (altura * altura) ;
 
                 Intent intent = new Intent(getApplicationContext(), MainResultado.class);
                 intent.putExtra("mensaje", resultado);
