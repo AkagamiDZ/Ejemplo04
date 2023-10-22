@@ -31,16 +31,24 @@
             app:layout_constraintVertical_bias="0.845">
 
             <Button
-                android:id="@+id/BTResultado1"
+                android:id="@+id/BTCalcular"
                 android:layout_width="211dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/color3"
-                android:text="Aceptar" />
+                android:text="Calcular" />
+
+            <Button
+                android:id="@+id/BTlimpiar"
+                android:layout_width="211dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/color3"
+                android:text="Limpiar" />
 
         </LinearLayout>
 
         <EditText
-            android:id="@+id/ETNombre"
+            android:id="@+id/ETPeso"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -53,7 +61,7 @@
             app:layout_constraintVertical_bias="0.5" />
 
         <EditText
-            android:id="@+id/ETApellidos"
+            android:id="@+id/ETAltura"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -62,15 +70,15 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ETNombre"
+            app:layout_constraintTop_toBottomOf="@+id/ETPeso"
             app:layout_constraintVertical_bias="0.5" />
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre"
-            app:layout_constraintBottom_toTopOf="@+id/ETNombre"
+            android:text="Peso"
+            app:layout_constraintBottom_toTopOf="@+id/ETPeso"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.138"
             app:layout_constraintStart_toStartOf="parent"
@@ -81,12 +89,12 @@
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Apellido"
-            app:layout_constraintBottom_toTopOf="@+id/ETApellidos"
+            android:text="Altura"
+            app:layout_constraintBottom_toTopOf="@+id/ETAltura"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.121"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/ETNombre"
+            app:layout_constraintTop_toBottomOf="@+id/ETPeso"
             app:layout_constraintVertical_bias="0.5" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -106,7 +114,7 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Pinto casas"
+            android:text="Clinica casas"
             android:textSize="34sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

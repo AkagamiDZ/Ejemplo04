@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 public class MainResultado extends AppCompatActivity {
 
-    TextView resultado;
-    Button aceptar;
+    TextView texto;
+    Button BTVolver;
 
 
 
@@ -19,14 +19,16 @@ public class MainResultado extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_resultado);
-        resultado= (TextView) findViewById(R.id.TVResultado);
-        aceptar=(Button) findViewById(R.id.BTResultado2);
 
-        resultado.setText("Su nombre es :" + getIntent());
-        Intent intent = new Intent(this, MainActivity.class);
-        aceptar.setOnClickListener(new View.OnClickListener() {
+        texto = findViewById(R.id.TVResultado);
+        BTVolver = findViewById(R.id.BTVolver);
+        double resultado = getIntent().getDoubleExtra("mensaje",0);
+
+        texto.setText("El Resultado es:" + String.valueOf(resultado));
+        BTVolver.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity2.class);
                 startActivity(intent);
             }
         });

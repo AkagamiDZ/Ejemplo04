@@ -35,19 +35,13 @@
             app:layout_constraintVertical_bias="0.5">
 
             <Button
-                android:id="@+id/BTAceptar"
+                android:id="@+id/BTInicio"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:paddingEnd="40dp"
-                android:text="aceptar" />
+                android:text="Inicio" />
 
-            <Button
-                android:id="@+id/BTAyuda"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Ayuda" />
         </LinearLayout>
 
         <TextView
@@ -55,7 +49,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
-            android:text="Pintamos casas"
+            android:text="Clinica casas"
             android:textSize="34sp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout"
             app:layout_constraintEnd_toEndOf="parent"

@@ -10,29 +10,49 @@ import android.widget.EditText;
 
 public class MainActivity2 extends AppCompatActivity {
 
-    Button aceptar;
-    EditText etnombres;
-    EditText etapellidos;
+    Button BTCalcular;
+    Button BTLimpiar;
+    EditText ETPeso;
+    EditText ETAltura;
 
-    String nombre;
+    EditText texto;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
-        aceptar=(Button) findViewById(R.id.BTResultado1);
-        etnombres=(EditText) findViewById(R.id.ETNombre);
-        etapellidos=(EditText) findViewById(R.id.ETApellidos);
-        nombre=etnombres.getText().toString();
 
-        Intent intent = new Intent(this, MainResultado.class);
-        intent.putExtra("nombre",etnombres.getText() );
+        BTCalcular = findViewById(R.id.BTCalcular);
+        texto = findViewById(R.id.ETPeso);
+        BTLimpiar = findViewById(R.id.BTlimpiar);
+        ETPeso = findViewById(R.id.ETPeso);
+        ETAltura = findViewById(R.id.ETAltura);
 
-        aceptar.setOnClickListener(new View.OnClickListener() {
+        BTCalcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String pesotexto = ETPeso.getText().toString();
+                String alturatexto = ETAltura.getText().toString();
+                double peso = Double.parseDouble(pesotexto);
+                double altura = Double.parseDouble(alturatexto);
+                Double resultado = peso = altura;
+
+                Intent intent = new Intent(getApplicationContext(), MainResultado.class);
+                intent.putExtra("mensaje", resultado);
                 startActivity(intent);
+                finish();
+            }
+
+        });
+
+
+
+        BTLimpiar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ETPeso.setText("");
+                ETAltura.setText("");
             }
         });
     }

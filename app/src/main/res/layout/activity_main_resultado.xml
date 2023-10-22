@@ -2,9 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/BTVolver"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainResultado">
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
         android:layout_width="412dp"
@@ -18,15 +20,31 @@
         app:layout_constraintVertical_bias="0.5">
 
         <TextView
-            android:id="@+id/TVResultado"
+            android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Su nombre es....."
+            android:layout_marginBottom="432dp"
+            android:background="@color/color4"
+            android:backgroundTint="@color/color4"
+            android:fontFamily="serif"
+            android:text="Su IMC Es:"
+            android:textColor="#494B54"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/TVResultado"
+            android:layout_width="153dp"
+            android:layout_height="45dp"
             app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintHorizontal_bias="0.436"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.561" />
 
         <LinearLayout
             android:id="@+id/linearLayout2"
@@ -45,7 +63,7 @@
                 android:layout_width="211dp"
                 android:layout_height="70dp"
                 android:backgroundTint="@color/color3"
-                android:text="Resultado" />
+                android:text="Volver" />
 
         </LinearLayout>
 
